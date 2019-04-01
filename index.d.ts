@@ -59,7 +59,7 @@ declare module 'egg' {
     protected logger: EggLogger;
   }
 
-  export class BaseHookClass {
+  export class Boot {
     /**
      * logger
      * @member {EggLogger}

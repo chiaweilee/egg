@@ -63,3 +63,8 @@ exports.Subscription = require('./lib/core/base_context_class');
  * @since 1.2.0
  */
 exports.BaseContextClass = require('./lib/core/base_context_class');
+
+/**
+ * @member {BaseHookClass}
+ */
+exports.BaseHookClass = require('./lib/core/base_hook_class');

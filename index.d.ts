@@ -64,25 +64,25 @@ declare module 'egg' {
      * logger
      * @member {EggLogger}
      */
-    logger: EggLogger;
+    protected logger: EggLogger;
 
     /**
      * The configuration of application
      * @member {EggAppConfig}
      */
-    config: EggAppConfig;
+    protected config: EggAppConfig;
 
     /**
      * The instance of agent
      * @member {Agent}
      */
-    agent: Agent;
+    protected agent: Agent;
 
     /**
      * The instance of app
      * @member {Application}
      */
-    app: Application;
+    protected app: Application;
   }
 
   export type RequestArrayBody = any[];

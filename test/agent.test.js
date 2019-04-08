@@ -1,8 +1,9 @@
 'use strict';
 
-const mock = require('egg-mock');
-const utils = require('./utils');
 const assert = require('assert');
+const mock = require('egg-mock');
+const path = require('path');
+const utils = require('./utils');
 
 describe('test/agent.test.js', () => {
   afterEach(mock.restore);
@@ -16,6 +17,6 @@ describe('test/agent.test.js', () => {
 
   it('agent logger config should work', () => {
     const fileTransport = app._agent.logger.get('file');
-    assert(fileTransport.options.file === '/tmp/foo/egg-agent.log');
+    assert(fileTransport.options.file === path.join('/tmp/foo', 'egg-agent.log'));
   });
 });
